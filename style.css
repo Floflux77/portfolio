@@ -12,19 +12,22 @@ html{
 
 body{
     font-family:'Inter',sans-serif;
-    background-color:#0b0b0b;
+    background-color:#0f1710;
     color:#e4e4e4;
     line-height:1.7;
 }
 
-
+p{
+    color: #cdcdcd;
+    font-size: 1.2em;
+}
 /* NAVIGATION */
 
 header{
     position:fixed;
     width:100%;
     top:0;
-    background:#111;
+    background:#0e120e;
     border-bottom:1px solid #1e1e1e;
     z-index:1000;
 }
@@ -40,9 +43,14 @@ nav{
 }
 
 .logo{
+    text-decoration: none;
     font-size:1.4rem;
     font-weight:700;
     color:#00d26a;
+}
+.logo a{
+    color: inherit;
+    text-decoration: none;
 }
 
 .nav-links{
@@ -272,4 +280,200 @@ footer{
     height:250px;
 }
 
+}
+.page-title{
+    padding-top:180px;
+    text-align:center;
+}
+
+.page-title h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+    gap:35px;
+}
+
+.project-card{
+    background:#151515;
+    border:1px solid #222;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 20px rgba(0,210,106,0.2);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    margin-bottom:15px;
+}
+
+.project-content p{
+    margin-bottom:20px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.skills span{
+    background:#00d26a20;
+    color:#00d26a;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:0.9rem;
+}
+.about-section{
+    min-height:80vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:120px 30px;
+}
+
+.about-container{
+    max-width:700px;
+    text-align:center;
+}
+
+.about-photo{
+    width:220px;
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:4px solid #00d26a;
+
+    box-shadow:
+        0 0 25px rgba(0,210,106,0.35);
+
+    margin-bottom:40px;
+}
+
+.about-container h2{
+    color:#00d26a;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+.about-container p{
+    color:#d4d4d4;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+/* ===== PAGE PROJET STRUCTURE ===== */
+
+.project-header{
+    padding-top:140px;
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.project-header h1{
+    font-size:2.5rem;
+    color:#00d26a;
+}
+
+.project-header p{
+    color:#bdbdbd;
+}
+
+/* IMAGE PRINCIPALE (empêche débordement) */
+
+.project-hero-image{
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.project-banner{
+    width:100%;
+    max-width:900px;
+    height:auto;
+    border-radius:15px;
+    border:2px solid #1f1f1f;
+    box-shadow:0 0 25px rgba(0,210,106,0.15);
+}
+
+/* CONTENEUR (réduction espaces vides) */
+
+.project-container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+/* BLOCS type "pagination" */
+
+.project-block{
+    background:#141414;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #222;
+}
+
+/* LISTE */
+
+.project-list{
+    padding-left:20px;
+}
+
+.project-list li{
+    margin-bottom:8px;
+}
+
+/* BOUTONS PREUVES */
+
+.proof-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.proof-btn{
+    display:inline-block;
+    padding:12px 18px;
+
+    background:#00d26a;
+    color:black;
+
+    text-decoration:none;
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.proof-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 15px rgba(0,210,106,0.3);
 }
